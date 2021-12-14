@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>Job Board</title>
+</head>
+<body>
+  <h4>Post a job:</h4>
+  <form action="/addjob" method="post">
+    <label for="title">Job Title:</label>
+    <input id="title" name="title" type="text" required>
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" type="text" required></textarea>
+    <h5>Contact Person:</h5>
+    <label for="contact-name">Name:</label>
+    <input id="contact-name" name="name" type="text" required>
+    <label for="contact-email">Email:</label>
+    <input id="contact-email" name="email" type="text" required>
+    <label for="contact-phone">Phone:</label>
+    <input id="contact-phone" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <button type="submit">Post Job</button>
+  </form>
+</body>
